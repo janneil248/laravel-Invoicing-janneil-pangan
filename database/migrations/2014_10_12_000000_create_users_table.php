@@ -21,8 +21,8 @@ return new class extends Migration
             $table->text('password');
             $table->text('firstname');
             $table->text('lastname');
-            $table->integer('position_id');
-            $table->integer('branch_id');
+            $table->integer('position_id')->default(1);
+            $table->integer('branch_id')->default(1);
             $table->rememberToken();
             $table->timestamps();
         });
